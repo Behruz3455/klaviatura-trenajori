@@ -1,0 +1,29 @@
+.rang{
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+p{
+    background-color: greenyellow;
+    color: red;
+    font-size: 60px;
+}
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+}
+.tun{
+    background-color: black;
+    color: white;
+
+}
+
+button{
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: greenyellow;
+} */

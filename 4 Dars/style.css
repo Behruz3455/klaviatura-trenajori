@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+section{
+    padding: 25px 0;
+}
+
+section .home img{
+    margin-bottom: 12px;
+}
+
+section .home h4{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section .home p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer {
+    padding: 24px 0;
+    background: #f5f2f2;
+}
+
+footer ul{
+    padding:    8px 0;
+    
+}
+
+footer p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.74);
+}

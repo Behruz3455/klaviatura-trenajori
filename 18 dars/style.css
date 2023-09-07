@@ -1,0 +1,28 @@
+/* .rang{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(img/kun.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.tun{
+    background: url(img/tun.jpg) no-repeat center center / cover;
+}

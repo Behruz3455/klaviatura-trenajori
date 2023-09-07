@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="styyle.css">
+  <title>23-dars</title>
+</head>
+
+<body>
+
+  <div class="container-fluid mt-2">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="card text-bg-success mb-3 text-center">
+          <div class="card-header title">Ko'paytirish Jadvali</div>
+          <div class="card-body">
+            <button type="button" class="btn btn-outline-warning mb-4 sitebtn" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">Boshlash</button>
+            <p class="card-text Nosvoy mb-4">Boshlash tugmasini bosing hamda kerakli vaqtni tanlab quyida chiqadigan savollarga
+              javob kiriting. Omad!</p>
+            <h2 id="time">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-center">
+        <button class="btn btn-success " id="true_answer">0</button>
+      </div>
+      <div class="col-6 text-center">
+        <button class="btn btn-danger " id="false_answer">0</button>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-primary" id="question_btn">8 * 7 = ?</button>
+      </div>
+      <div class="col-4 text-center">
+        <input type="text" class="form-control" id="answer_input" value="56" disabled>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">O'zingizni Tanishtiring</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Ismizni kiriting</label>
+            <input type="text" class="form-control" id="name">
+            <button class="btn btn-warning btn-sm mt-2 nameEditbtn d-none">Tozalash</button>
+          </div>
+          <div class="mb-3">
+            <label for="second" class="form-label">Necha sekund bajarmoqchisiz?</label>
+            <select name="second" id="second" class="form-select">
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Orqaga</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="start_btn">Boshlash</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

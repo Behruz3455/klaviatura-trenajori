@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>IT Works - Creative studio</title>
+	<meta name="author" content="Jurabek Murodov" />
+	<meta name="keywords" lang="ru" content="IT Works - Creative studio">
+	<meta name="description" content="IT Works - Creative studio">
+	<link rel="shortcut icon" href="https://shared-26.smartape.ru/manimg/smartape/images/icon.png" type="image/png">
+	<link rel="stylesheet" href="https://shared-26.smartape.ru/manimg/smartape/css/style.css" type="text/css">
+	<style>
+	    html {margin-top: 0px !important;}
+	    p    {margin-bottom: 10px;}
+	    body {
+          margin: 0;
+          height: 100vh;
+          width: 100vw;
+        }
+    #main {    
+        position: absolute;
+        top: 200px;
+        left: calc(50% - 362px);
+        background-color: #5daf0073;
+        box-shadow: 0 0 160px 90px #6fce0370;
+        border-radius: 60px;
+        padding: 0 20px;
+    }
+    #main p {
+        color: #fff;
+        font-weight: 500;
+        text-shadow: 0 1px 2px #040404a6;
+        font-family: 'Verdana';
+    }
+    
+	</style>
+</head>
+
+<body> 
+ <canvas id="canv" width="100%" height="100%"> </canvas>
+ 
+     <script id="rendered-js">
+            const canvas = document.getElementById('canv');
+            const ctx = canvas.getContext('2d');
+            
+            const w = canvas.width = document.body.offsetWidth;
+            const h = canvas.height = document.body.offsetHeight;
+            const cols = Math.floor(w / 20) + 1;
+            const ypos = Array(cols).fill(0);
+            
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, w, h);
+            
+            function matrix() {
+              ctx.fillStyle = '#0001';
+              ctx.fillRect(0, 0, w, h);
+            
+              ctx.fillStyle = '#0f0';
+              ctx.font = '15pt monospace';
+            
+              ypos.forEach((y, ind) => {
+                const text = String.fromCharCode(Math.random() * 128);
+                const x = ind * 20;
+                ctx.fillText(text, x, y);
+                if (y > 100 + Math.random() * 10000) ypos[ind] = 0;else
+                ypos[ind] = y + 20;
+              });
+            }
+            
+            setInterval(matrix, 50);
+            //# sourceURL=pen.js
+    </script>
+	<div id="main">
+		<header class="entry-header">
+			<a id="logo" href="#">
+				<img src="img/Untitled-1.png" title="IT Works - Creative studio" alt="IT Works - Creative studio" width="500px">
+			</a>		
+		</header>
+		<p>Biroq Siz murojat qilishdan tortinmang</p>
+		<p>Tel.: +998 (95) 107 42 40
+		<br><span style="padding-left: 30px;">+998 (95) 107 42 40</span></p>
+	</div>
+
+</body>
+</html>
